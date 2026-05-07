@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(87, 138, 97);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: rgb(87, 138, 97);
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+footer{
+    background-color: rgb(87, 138, 97);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
