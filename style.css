@@ -4,17 +4,21 @@
     box-sizing: border-box;
 }
 
-.navbar ul {
+.navbar{
+    background-color: #FFF8F0 ;
+    width: 100%;
+}
+
+.navbar ul{
     list-style-type: none;
-    background-color: rgb(87, 138, 97);
-    padding: 0;
-    margin: 0;
     display: flex;
+    justify-content: center;
+        padding: 15px 0;
 }
 
 .navbar li a {
     display: block;
-    color: rgb(255, 255, 255);
+    color: #3C2F2F;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
@@ -22,14 +26,51 @@
 }
 
 .navbar li a:hover {
-    background-color: rgb(87, 138, 97);
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: #E6D3B3;
+    color: #3C2F2F;
+    border-bottom: 2px solid #6F4E37;
 }
 
 footer{
-    background-color: rgb(87, 138, 97);
-    color: white;
+    background-color: #FFF8F0;
+    color: #3C2F2F;
     text-align: center;
     padding: 15px;
+}
+
+.hero{
+    text-align: center;
+    color: white;
+    padding: 150px 20px;
+}
+
+.hero h1{
+    font-size: 60px;
+}
+
+.hero p{
+    font-size: 25px;
+}
+
+.nosotros{
+    background-color: rgba(255, 248, 240, 0.92);
+    width: 80%;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.nosotros h1{
+    color: #6F4E37;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.nosotros p{
+    color: #3C2F2F;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
