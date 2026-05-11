@@ -64,11 +64,11 @@ body{
 }
 
 footer{
-    background-color: #6F4E37;
-    color: #FFF8F0;
+    background-color:#FFF8F0;
+    color:#3C2F2F;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 300px;
 }
 
 .hero{
