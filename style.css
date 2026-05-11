@@ -107,3 +107,18 @@ footer{
     line-height: 1.8;
     margin-bottom: 15px;
 }
+
+.redes{
+    margin-top: 10px;
+}
+
+.redes a{
+    color: #3C2F2F;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.redes a:hover{
+    color: #E6D3B3;
+}
