@@ -62,12 +62,13 @@ body{
     width: 100%;
     background-color:#fff8f0;
 }
-}
+
 footer{
     background-color: #FFF8F0;
     color: #3C2F2F;
     text-align: center;
     padding: 15px;
+    margin-top: 300px;
 }
 
 .hero{
