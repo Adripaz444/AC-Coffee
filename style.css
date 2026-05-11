@@ -48,9 +48,16 @@ body{
     display:none;
     position:absolute;
     min-width:140px;
+    top:100%;
+    left:0;
+    background-color:#fff8f0;
+    min-width: 220px;
+    padding:0;
+    margin:0;
 }
-.nav li:hover >ul{
-    display:block;
+.nav li ul li{
+    width: 100%;
+    background-color:#fff8f0;
 }
 footer{
     background-color: #FFF8F0;
