@@ -42,7 +42,10 @@ body{
     border-bottom: 2px solid #6F4E37;
 }
 .nav>li{
-    float:left;
+    position:relative;
+}
+.nav liLhover >ul{
+    display: block;
 }
 .nav li ul{
     display:none;
