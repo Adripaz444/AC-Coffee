@@ -59,6 +59,10 @@ body{
     width: 100%;
     background-color:#fff8f0;
 }
+.nav li ul li a{
+    background-color:#fff8f0;
+    color:#3C2F2F;
+}
 footer{
     background-color: #FFF8F0;
     color: #3C2F2F;
