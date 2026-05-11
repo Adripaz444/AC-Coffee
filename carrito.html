@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device" initial scale>
-    </head>
-    <title>AC Coffee </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | AC Coffee</title>
     <link rel="stylesheet" href="style.css">
-    <body>
-        
-        <nav class="navbar">
+</head>
+<body onload="mostrarCarrito()">
+    <nav class="navbar">
         <ul class="nav">
-        <li><a href="index.html"></a></li>
-        <li><a href="#">Menu</a>
-            <ul>
-                <li><a href="Bebidas.html">Bebidas</a></li>
-                <li><a href="Postres.html">Panaderia y Postres</a></li>
-                <li><a href="Comidas.html"></a>Comidas</li>
-            </ul>
-        </li>
-        <li><a href="pedidos.html">Pedidos</a></li>
-        <li><a href="ubicaciones.html">Ubicaciones</a></li>
-        <li><a href="info.html">Acerca de Nosotros</a></li>
-        <li><a href="horario.html">Horarios</a></li>
-        <li><a href="carrito.html"><Font color="White">🛒</Font></a></li>
+            <li>
+                <a href="#">Menu</a>
+                <ul>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="postres.html">Panadería y Postres</a></li>
+                    <li><a href="comidas.html">Comidas</a></li>
+                </ul>
+            </li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="ubicaciones.html">Ubicaciones</a></li>
+            <li><a href="info.html">Acerca de Nosotros</a></li>
+            <li><a href="carrito.html">🛒</a></li>
         </ul>
-        </nav>
-    </body>
-    <footer>
-    <div class="redes">
-        <a href="https://www.instagram.com/ac_coffeegt?igsh=MXQ4dHN6b2NnM3cweg==">Instagram</a>
-        <a href="https://www.facebook.com/share/1GqbHDVcX5/">Facebook</a>
-    </div>
-    <center><p>AC Coffee © 2026 | Creado por Adriana & Carmen </p></center>
-    </footer>
+    </nav>
+
+    <h1 class="titulo-menu">
+        Tu Carrito
+    </h1>
+
+    <section id="carrito-contenedor"> </section>
+
+    <h2 id="total"></h2>
+    <center>
+        <button class="vaciar-btn"
+        onclick="vaciarCarrito()">
+        Vaciar Carrito
+        </button>
+    </center>
+
+<script src="carrito.js"></script>
+</body>
 </html>
