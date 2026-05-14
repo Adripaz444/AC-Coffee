@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Coffee | Bebidas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <ul class="nav">
+
+            <li>
+                <a href="#">Menu</a>
+                <ul>
+                    <li><a href="Bebidas.html">Bebidas</a></li>
+                    <li><a href="Postres.html">Panadería y Postres</a></li>
+                    <li><a href="Comida.html">Comidas</a></li>
+                </ul>
+            </li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="ubicaciones.html">Ubicaciones</a></li>
+            <li><a href="info.html">Acerca de Nosotros</a></li>
+            <li><a href="info.html">Nuestros Horarios</a></li>
+            <li><a href="carrito.html">🛒</a></li>
+
+        </ul>
+
+    </nav>
+
+    <h1 class="titulo-menu">Nuestras Bebidas</h1>
+    <section class="productos">
+        <div class="card">
+            <img src="frappe.jpg" alt="">
+            <div class="info">
+                <h2>Frappé de Café</h2>
+                <p>Bebida helada y cremosa mezclada con café y hielo triturado.</p>
+                <span class="precio">Q30</span>
+                <button onclick="agregarCarrito(
+                'Frappé de Café',
+                30,
+                'frappe.jpg'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="smothie.jpg" alt="">
+            <div class="info">
+                <h2>Smoothie de Fresa</h2>
+                <p>Batido refrescante preparado con fresas naturales y yogurt.</p>
+                <span class="precio">Q35</span>
+
+                <button onclick="agregarCarrito(
+                'Smoothie de Fresa',
+                35,
+                'smoothie.jpg'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="mocca.jpg" alt="">
+            <div class="info">
+                <h2>Mocca Frío</h2>
+                <p>Combinación de café y chocolate servida fría con crema batida.</p>
+                <span class="precio">Q35</span>
+
+                <button onclick="agregarCarrito(
+                'Mocha Frío',
+                35,
+                'mocca.jpg'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="americano.jpg" alt="">
+            <div class="info">
+                <h2>Café Americano</h2>
+                <p>Café clásico de sabor intenso y aroma tradicional.</p>
+                <span class="precio">Q20</span>
+
+                <button onclick="agregarCarrito(
+                'Café Americano',
+                20,
+                'americano.jpg'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="capuccino.jpg" alt="">
+            <div class="info">
+                <h2>Capuccino</h2>
+                <p>Espresso con leche cremosa y espuma suave.</p>
+                <span class="precio">Q27</span>
+
+                <button onclick="agregarCarrito(
+                'Capuccino',
+                27,
+                'capuccino.jpg'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="latte.jpg" alt="">
+            <div class="info">
+                <h2>Latte Vainilla</h2>
+                <p>Bebida cremosa con espresso y un toque dulce de vainilla.</p>
+                <span class="precio">Q30</span>
+
+                <button onclick="agregarCarrito(
+                'Latte Vainilla',
+                30,
+                'latte.jpg'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="chocolate.jpg" alt="">
+            <div class="info">
+                <h2>Chocolate Caliente</h2>
+                <p>Chocolate espeso y reconfortante ideal para tardes tranquilas.</p>
+                <span class="precio">Q25</span>
+
+                <button onclick="agregarCarrito(
+                'Chocolate Caliente',
+                25,
+                'chocolate.jpg'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="chai.jpg" alt="">
+            <div class="info">
+                <h2>Té Chai</h2>
+                <p>Infusión especiada con canela, clavo y leche caliente.</p>
+                <span class="precio">Q22</span>
+
+                <button onclick="agregarCarrito(
+                'Té Chai',
+                22,
+                'chai.jpg'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>AC Coffee © 2026 | Creado por Carmen & Adriana</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+
+</body>
+
+</html>
