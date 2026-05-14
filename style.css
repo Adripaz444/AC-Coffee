@@ -472,5 +472,6 @@ img {
     .bar{
         width: 30px;
         height: 4px;
+        background-color:#6F4E37
     }
 }
