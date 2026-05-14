@@ -97,6 +97,9 @@ z-index: 999;
   .nav.active{
         left: 0;
     }
+    .nav li a{
+    color: #3C2F2F;
+}
     .nav li ul{
         display: block;
         position: static;
@@ -108,10 +111,7 @@ z-index: 999;
         padding-left: 40px;
         font-size: 16px;
     }
-    .nav li a{
 
-    color: #3C2F2F;
-}
 }
 footer{
     background-color:#FFF8F0;
