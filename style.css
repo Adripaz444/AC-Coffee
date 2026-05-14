@@ -82,7 +82,7 @@ body{
     display: flex; 
   }
   
-  .nav-menu {
+  .nav {
     position: fixed;
     top: 70px;
     left: -100%; 
@@ -190,7 +190,6 @@ footer{
     padding: 25px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-}
 }
 .info h2{
     color: #3C2F2F;
