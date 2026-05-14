@@ -479,7 +479,7 @@ img {
 
         font-size: 18px;
         padding: 18px 20px;
-        color: #FFF8F0;
+        color: #6F4E37;
     }
 
     .hamburger{
@@ -490,6 +490,6 @@ img {
         width: 30px;
         height: 4px;
         color: #6F4E37;
-        background-color:#6F4E37
+        background-color:#6F4E37;
     }
 }
