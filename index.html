@@ -9,6 +9,13 @@
     <body>
         
         <nav class="navbar">
+            <button class="hamburger" onclick="toggleMenu()">
+
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+
+</button>
         <ul class="nav">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="#">Menu</a>
@@ -35,6 +42,15 @@
     <center><h1>Bienvenido a AC Coffee</h1></center>
     <center><h3>Cada taza cuenta una historia.</h3></center>
     </div>
+        <script>
+
+function toggleMenu(){
+
+    document.querySelector(".nav")
+    .classList.toggle("active");
+}
+
+</script>
     </body>
     
     <footer>
