@@ -83,20 +83,31 @@ body{
   }
   
   .nav {
-    position: fixed;
-    top: 70px;
-    left: -100%; 
-    flex-direction: column;
-    background: #FFF8F0
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    padding: 2rem 0;
+position: fixed;
+top: 70px;
+left: -100%;
+flex-direction: column;
+background-color: #FFF8F0;
+width: 100%;
+text-align: center;
+transition: 0.3s;
+padding: 2rem 0;
+z-index: 999;
   }
-  
-  .nav.active {
-    left: 0;
-  }
+  .nav.active{
+        left: 0;
+    }
+    .nav li ul{
+        display: block;
+        position: static;
+        background-color: #E6D3B3;
+        width: 100%;
+    }
+
+    .nav li ul li a{
+        padding-left: 40px;
+        font-size: 16px;
+    }
 }
 footer{
     background-color:#FFF8F0;
