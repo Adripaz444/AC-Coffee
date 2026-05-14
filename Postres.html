@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Coffee | Postres</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <ul class="nav">
+
+            <li>
+                <a href="#">Menu</a>
+
+                <ul>
+                    <li><a href="Bebidas.html">Bebidas</a></li>
+                    <li><a href="Postres.html">Panadería y Postres</a></li>
+                    <li><a href="Comidas.html">Comidas</a></li>
+                </ul>
+            </li>
+
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="ubicaciones.html">Ubicaciones</a></li>
+            <li><a href="info.html">Acerca de Nosotros</a></li>
+            <li><a href="info.html">Nuestros Horarios</a></li>
+            <li><a href="carrito.html">🛒</a></li>
+
+        </ul>
+
+    </nav>
+
+    <h1 class="titulo-menu">Panadería y Postres</h1>
+
+    <section class="productos">
+
+        <div class="card">
+            <img src="croissant.png" alt="">
+            <div class="info">
+                <h2>Croissant</h2>
+                <p>Pan hojaldrado suave y crujiente recién horneado.</p>
+                <span class="precio">Q20</span>
+
+                <button onclick="agregarCarrito(
+                'Croissant',
+                20,
+                'croissant.png'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="cheesecake.png" alt="">
+            <div class="info">
+                <h2>Cheesecake de Fresa</h2>
+                <p>Pastel cremoso con cobertura dulce de fresa natural.</p>
+                <span class="precio">Q25</span>
+
+                <button onclick="agregarCarrito(
+                'Cheesecake de Fresa',
+                25,
+                'cheesecake.png'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="galletas.png" alt="">
+            <div class="info">
+                <h2>Galletas Chocolate</h2>
+                <p>Galletas suaves con chispas de chocolate derretido.</p>
+                <span class="precio">Q10</span>
+
+                <button onclick="agregarCarrito(
+                'Galletas Chocolate',
+                10,
+                'galletas.png'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="muffin.png" alt="">
+            <div class="info">
+                <h2>Muffin Arándanos</h2>
+                <p>Panecillo esponjoso con arándanos dulces y frescos.</p>
+                <span class="precio">Q15</span>
+
+                <button onclick="agregarCarrito(
+                'Muffin Arándanos',
+                15,
+                'muffin.png'
+                )">
+                Agregar
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>AC Coffee © 2026 | Creado por Carmen & Adriana</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+
+</body>
+
+</html>
