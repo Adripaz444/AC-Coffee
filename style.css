@@ -60,7 +60,43 @@ body{
 .nav li:hover > ul{
     display: block;   
 }
+.hamburger {
+  display: none; 
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
+.bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* aparece el botón */
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%; 
+    flex-direction: column;
+    background: #333;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 2rem 0;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
 footer{
     background-color:#FFF8F0;
     color:#3C2F2F;
