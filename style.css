@@ -79,7 +79,7 @@ body{
 
 @media (max-width: 768px) {
   .hamburger {
-    display: flex; /* aparece el botón */
+    display: flex; 
   }
   
   .nav-menu {
@@ -94,9 +94,10 @@ body{
     padding: 2rem 0;
   }
   
-  .nav-menu.active {
+  .nav.active {
     left: 0;
   }
+}
 footer{
     background-color:#FFF8F0;
     color:#3C2F2F;
