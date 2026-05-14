@@ -8,6 +8,11 @@
 </head>
 <body onload="mostrarCarrito()">
     <nav class="navbar">
+        <button class="hamburger" onclick="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</button>
         <ul class="nav">
                     <li><a href="index.html">Inicio</a></li>
 
@@ -47,5 +52,15 @@
     </center>
 
 <script src="carrito.js"></script>
+    <script>
+
+function toggleMenu(){
+
+    document.querySelector(".nav")
+    .classList.toggle("active");
+}
+
+</script>
+
 </body>
 </html>
