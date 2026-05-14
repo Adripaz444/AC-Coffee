@@ -236,6 +236,48 @@ footer{
     cursor: pointer;
     margin-bottom: 50px;
 }
+
+.ubicaciones{
+    padding: 60px;
+    background-color: #FFF8F0;
+    text-align: center;
+}
+
+.ubicaciones h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #3C2F2F;
+}
+
+.contenedor-ubicaciones{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sucursal{
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.sucursal:hover{
+    transform: translateY(-10px);
+}
+
+.sucursal h3{
+    color: #6F4E37;
+    margin-bottom: 15px;
+}
+
+.sucursal p{
+    color: #555;
+    margin: 8px 0;
+}
 .contacto{
     background-color: rgba(255, 248, 240, 0.92);
     width: 80%;
