@@ -336,7 +336,22 @@ contenedor.innerHTML = "";
 
 let total = 0;
 
-if(carrito.length === 0){
+    <h2 id="total"></h2>
+    <center>
+        <button class="vaciar-btn"
+        onclick="vaciarCarrito()">
+        Vaciar Carrito
+    </center>
+
+    <br>
+
+    <center>
+    <a href="checkout.html">
+        <button class="comprar-btn">
+            Finalizar Compra 💳
+        </button>
+    </a>
+    </center>
 
 contenedor.innerHTML = `
 <h2 style="text-align:center;color:#888;">
@@ -344,7 +359,8 @@ Tu carrito está vacío 🏍️
 </h2>
 `;
 
-btnComprar.style.display = "none";
+
+function toggleMenu(){
 
 }
 
