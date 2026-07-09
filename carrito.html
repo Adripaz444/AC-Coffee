@@ -1,59 +1,428 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito | AC Coffee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AC Coffee | Carrito</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body onload="mostrarCarrito()">
-    <nav class="navbar">
-        <button class="hamburger" onclick="toggleMenu()">
+
+        <nav class="navbar">
+            <button class="hamburger" onclick="toggleMenu()">
+
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
+
 </button>
         <ul class="nav">
-                    <li><a href="index.html">Inicio</a></li>
-
-            <li>
-                <a href="#">Menu</a>
-                <ul>
-                    <li><a href="Bebidas.html">Bebidas</a></li>
-                    <li><a href="Postres.html">Panadería y Postres</a></li>
-                    <li><a href="Comidas.html">Comidas</a></li>
-                </ul>
-            </li>
-            <li><a href="ubicaciones.html">Ubicaciones</a></li>
-            <li><a href="info.html">Acerca de Nosotros</a></li>
-            <li><a href="horario.html">Horarios</a></li>
+        <li><a href="inicio.html"></a></li>
+        <li><a href="#">Menu</a> 
+            <ul>
+                <li><a href="Bebidas.html">Bebidas</a></li>
+                <li><a href="Postres.html">Panaderia y Postres</a></li>
+                <li><a href="Comidas.html"></a>Comidas</li>
+            </ul>
+        </li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="ubicaciones.html">Ubicaciones</a></li>
+        <li><a href="info.html">Acerca de Nosotros</a></li>
+        <li><a href="horario.html">Horarios</a></li>
         <li><a href="carrito.html">🛒</a></li>
         <li><a href="contacto.html">Unete a nuestro equipo</a></li>
         </ul>
-    </nav>
+        </nav>
 
-    <h1 class="titulo-menu">
-        Tu Carrito
-    </h1>
+<style>
 
-    <section id="carrito-contenedor"> </section>
-
-    <h2 id="total"></h2>
-    <center>
-        <button class="vaciar-btn"
-        onclick="vaciarCarrito()">
-        Vaciar Carrito
-        </button>
-    </center>
-
-<script src="carrito.js"></script>
-    <script>
-
-function toggleMenu(){
-
-    document.querySelector(".nav")
-    .classList.toggle("active");
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
+
+body{
+background-image: linear-gradient(#00000066,
+#00000066),
+url("fondo4.jpg");
+color:#E6D3B3;
+}
+
+/* HEADER */
+
+header{
+background:#E6D3B3;
+padding:20px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:2px solid #6F4E37;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#6F4E37;
+}
+
+.logo span{
+color:white;
+}
+
+.back{
+background:#6F4E37;
+padding:12px 20px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.back:hover{
+background:white;
+color:#E6D3B3;
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:50px 0;
+}
+
+.title{
+font-size:45px;
+margin-bottom:30px;
+text-align:center;
+}
+
+/* PRODUCTOS */
+
+#carrito{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.producto{
+background:#E6D3B3;
+padding:20px;
+border-radius:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+transition:.3s;
+}
+
+.producto:hover{
+transform:translateY(-5px);
+}
+
+.producto img{
+width:120px;
+height:90px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.info{
+flex:1;
+margin-left:20px;
+}
+
+.info h3{
+margin-bottom:10px;
+}
+
+.price{
+font-size:22px;
+color:#6F4E37;
+font-weight:bold;
+}
+
+/* BOTONES */
+
+.delete{
+background:#6F4E37;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.delete:hover{
+background:white;
+color:#E6D3B3;
+}
+
+/* TOTAL */
+
+.total-box{
+margin-top:40px;
+background:#E6D3B3;
+padding:35px;
+border-radius:20px;
+text-align:center;
+}
+
+.total-box h2{
+font-size:35px;
+margin-bottom:20px;
+}
+
+.total{
+font-size:40px;
+color:#6F4E37;
+font-weight:bold;
+margin-bottom:25px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.vaciar{
+background:white;
+color:#E6D3B3;
+border:none;
+padding:15px 25px;
+border-radius:12px;
+cursor:pointer;
+font-size:16px;
+transition:.3s;
+}
+
+.vaciar:hover{
+transform:scale(1.05);
+}
+
+.comprar{
+background:#E6D3B3;
+color:white;
+border:none;
+padding:15px 25px;
+border-radius:12px;
+cursor:pointer;
+font-size:16px;
+transition:.3s;
+display:none;
+}
+
+.comprar:hover{
+background:white;
+color:#E6D3B3;
+}
+
+/* MENSAJE */
+
+.mensaje{
+margin-top:25px;
+font-size:22px;
+color:#00d26a;
+font-weight:bold;
+display:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.producto{
+flex-direction:column;
+text-align:center;
+}
+
+.info{
+margin:20px 0;
+}
+
+.title{
+font-size:35px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+AC<span>Coffee</span>
+</div>
+
+<a href="index.html" class="back">
+← Volver
+</a>
+
+</header>
+
+<section class="container">
+
+<h1 class="title">
+🛒 Tu Carrito
+</h1>
+
+<div id="carrito"></div>
+
+<div class="total-box">
+
+<h2>Total</h2>
+
+<div class="total" id="total">
+Q 0
+</div>
+
+<div class="buttons">
+
+<button class="vaciar" onclick="vaciarCarrito()">
+Vaciar carrito
+</button>
+
+<a href="checkout.html">
+
+<button
+class="comprar"
+id="btnComprar">
+
+Finalizar Compra 💳
+
+</button>
+
+</a>
+</div>
+
+<div
+class="mensaje"
+id="mensajeCompra">
+
+✅ Tu compra está lista.
+Gracias por confiar en BLACKPISTONS.
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+let carrito =
+JSON.parse(localStorage.getItem("carrito"))
+|| [];
+
+function renderCarrito(){
+
+const contenedor =
+document.getElementById("carrito");
+
+const totalElemento =
+document.getElementById("total");
+
+const btnComprar =
+document.getElementById("btnComprar");
+
+contenedor.innerHTML = "";
+
+let total = 0;
+
+if(carrito.length === 0){
+
+contenedor.innerHTML = `
+<h2 style="text-align:center;color:#888;">
+Tu carrito está vacío 🏍️
+</h2>
+`;
+
+btnComprar.style.display = "none";
+
+}
+
+carrito.forEach((producto,index)=>{
+
+total += producto.precio;
+
+contenedor.innerHTML += `
+
+<div class="producto">
+
+<img src="${producto.imagen}">
+
+<div class="info">
+<h3>${producto.nombre}</h3>
+<p class="price">
+Q ${producto.precio.toLocaleString()}
+</p>
+</div>
+
+<button
+class="delete"
+onclick="eliminar(${index})">
+
+Eliminar
+
+</button>
+
+</div>
+`;
+
+});
+
+totalElemento.innerText =
+"Q " + total.toLocaleString();
+
+if(carrito.length > 0){
+btnComprar.style.display = "inline-block";
+}
+
+}
+
+function eliminar(index){
+
+carrito.splice(index,1);
+
+localStorage.setItem(
+"carrito",
+JSON.stringify(carrito)
+);
+
+renderCarrito();
+
+}
+
+function vaciarCarrito(){
+
+localStorage.removeItem("carrito");
+
+carrito = [];
+
+document.getElementById(
+"mensajeCompra"
+).style.display = "none";
+
+renderCarrito();
+
+}
+
+function compraLista(){
+
+document.getElementById(
+"mensajeCompra"
+).style.display = "block";
+
+}
+
+renderCarrito();
 
 </script>
 
